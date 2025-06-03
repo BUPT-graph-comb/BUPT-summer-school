@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+
+<html lang="zh">
+<head><link href="favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&amp;display=swap" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<title>暑期学校 Summer School</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Petersen_graph.svg/800px-Petersen_graph.svg.png') no-repeat center top; background-size: contain;
+      color: #333;
+    }
+    header {
+      background: #0066cc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    
+    nav {
+      background: #ffffff;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 1000px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+    h2 {
+      border-bottom: 2px solid #0066cc33;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    .register-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #0066cc;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .register-button:hover {
+      background-color: #005bb5;
+    }
+    table.schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .schedule-table th, .schedule-table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    .schedule-table th {
+      background: #f0f0f0;
+    }
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      .register-button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  
+    .schedule-table th {
+      background: #e0e7ef;
+      color: #333;
+    }
+    .schedule-table tr:nth-child(even) td {
+      background: #f9fcff;
+    }
+    .schedule-table tr:nth-child(odd) td {
+      background: #ffffff;
+    }
+    
+.lang-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  user-select: none;
+}
+</style>
+<meta content="2025暑期学校官网，包含课程介绍、讲者信息、日程安排、报名方式等。" name="description"/>
+<meta content="暑期学校, 图论, 组合数学" name="keywords"/>
+</head>
+<body style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/06/Strongly_regular_graph4c.png'); background-size: cover; background-attachment: fixed; font-family: 'Noto Sans SC', sans-serif;">
+<header>
+<h1 id="title">暑期学校</h1>
+</header> <section id="intro">
+<h2 id="welcome-title">欢迎</h2>
+<p id="welcome-text">2025 年暑期学校将于 8 月 25 日至 30 日举行，涵盖图论、组合数学等多个方向。</p>
+</section>
+<section id="courses">
+<h2 id="course-title">主讲课程</h2>
+<ul id="course-list"><li>课程 A</li><li>课程 B</li></ul>
+</section><section id="speakers">
+<h2 id="speaker-title">主讲人介绍</h2>
+<div id="speaker-list">
+<p><strong>Prof. Demo A：</strong> Example University 教授，研究方向为极值图论与图参数。</p>
+<p><strong>Prof. Demo B：</strong> Example Institute 教授，专注于组合结构与概率方法。</p>
+</div>
+</section>
+<section id="schedule">
+<h2 id="schedule-title">日程安排（2025 年 8 月 25 日至 30 日）</h2>
+<table class="schedule-table">
+<thead>
+<tr>
+<th id="th-date">日期</th>
+<th id="th-weekday">星期</th>
+<th id="th-content">安排</th>
+</tr>
+</thead>
+<tbody id="schedule-body">
+<tr><td>2025-08-25</td><td>星期一</td><td>暂定</td></tr>
+<tr><td>2025-08-26</td><td>星期二</td><td>暂定</td></tr>
+<tr><td>2025-08-27</td><td>星期三</td><td>暂定</td></tr>
+<tr><td>2025-08-28</td><td>星期四</td><td>暂定</td></tr>
+<tr><td>2025-08-29</td><td>星期五</td><td>暂定</td></tr>
+<tr><td>2025-08-30</td><td>星期六</td><td>暂定</td></tr>
+</tbody>
+</table>
+<p style="font-size:14px; color:#666; text-align:right; margin-top:10px;">📅 日程最后更新时间：2025年05月14日</p></section>
+<section id="resources" style="background:#fdfdfd; border-top: 4px solid #ccc;">
+<h2 id="resource-title">学习与资料</h2>
+<ul style="list-style:none; padding-left:0; line-height:2em;">
+<li style="padding:4px 0;"><a href="#" style="text-decoration:none; color:#0066cc;" target="_blank">📄 PDF 会议手册（即将上线）</a></li>
+<li style="padding:4px 0;"><a href="#" style="text-decoration:none; color:#0066cc;" target="_blank">📘 PDF 课堂资料（即将上线）</a></li>
+<li style="padding:4px 0;"><a href="#" style="text-decoration:none; color:#0066cc;" target="_blank">🎬 课堂视频学习回顾（即将上线）</a></li>
+</ul>
+</section>
+<section id="faq" style="background:#f7faff; border-left: 6px solid #007acc; padding: 20px;">
+<h2>常见问题 FAQ</h2>
+<ul style="line-height:1.8em; padding-left:20px;">
+<li><strong>如何报名？</strong> 请点击页面下方的报名链接，填写表单提交。</li>
+<li><strong>是否提供住宿？</strong> 主办方可提供部分住宿名额，详见报名表说明。</li>
+<li><strong>是否提供听课证明？</strong> 参与全程可申请听课证明，活动结束后统一发放。</li>
+</ul>
+</section><section id="register">
+<h2 id="register-title">报名方式</h2>
+<p id="register-text">请通过以下链接进行报名：</p>
+<a class="register-button" href="www.example.com" id="register-button">点击报名</a>
+</section>
+<section id="footer" style="text-align:center; font-size:14px; margin-top:40px; padding:20px; background:#f0f0f0;">
+<p><strong>主办单位：</strong>Example University</p>
+<p><strong>协办单位：</strong>Example Research Center</p>
+<p><strong>联系人：</strong>example@example.edu</p>
+</section>
+
+</body>
+</html>
