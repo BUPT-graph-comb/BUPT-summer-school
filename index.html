@@ -113,6 +113,30 @@
   color: white;
   user-select: none;
 }
+
+   .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* 固定列宽，避免文字撑破布局 */
+  }
+  .schedule-table th, .schedule-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    word-wrap: break-word; /* 允许换行 */
+    vertical-align: top;
+  }
+  .schedule-table th#th-am,
+  .schedule-table th#th-pm {
+    width: 35%;
+  }
+  .schedule-table th#th-date,
+  .schedule-table th#th-weekday {
+    width: 15%;
+  }
+  .schedule-table ul {
+    padding-left: 18px;
+    margin: 4px 0;
+  }
 </style>
 <meta content="2025暑期课程官网，包含课程介绍、讲者信息、日程安排、报名方式等。" name="description"/>
 <meta content="暑期课程, 图论, 组合数学" name="keywords"/>
