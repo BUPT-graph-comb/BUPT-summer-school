@@ -19,6 +19,207 @@
 <title>2025年"图论与组合"暑期课程</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a6fc4 0%, #2c3e50 100%);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .slider-container {
+            margin: 10px auto;
+            position: relative;
+            max-width: 800px;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+        
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            height: 500px;
+        }
+        
+        .slide {
+            min-width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .slide-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: white;
+            padding: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+        
+        .slide-title {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .slide-description {
+            font-size: 1.1rem;
+            max-width: 70%;
+        }
+        
+        .slider-controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .slider-btn {
+            background: #1a6fc4;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            margin: 0 10px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s, transform 0.2s;
+        }
+        
+        .slider-btn:hover {
+            background: #145ca3;
+            transform: translateY(-2px);
+        }
+        
+        .slider-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .dot {
+            width: 12px;
+            height: 12px;
+            background: #ccc;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .dot.active {
+            background: #1a6fc4;
+        }
+        
+        .info-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .info-card {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .info-card h2 {
+            color: #1a6fc4;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        @media (max-width: 768px) {
+            .slider {
+                height: 400px;
+            }
+            
+            .slide-content {
+                padding: 20px;
+            }
+            
+            .slide-title {
+                font-size: 1.5rem;
+            }
+            
+            .slide-description {
+                font-size: 1rem;
+                max-width: 100%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .slider {
+                height: 300px;
+            }
+            
+            .slide-title {
+                font-size: 1.2rem;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+        }
+    </style>
+<style>
     * {
       box-sizing: border-box;
     }
@@ -166,11 +367,11 @@
 <body style="background-image: url('images/背景.png'); background-size: cover; background-attachment: fixed; font-family: 'Noto Sans SC', sans-serif;">
 <header>
 <h1 id="title">2025年"图论与组合"暑期课程</h1>
-</header> <section id="intro">
+</header> 
+ <section id="intro">
 <h2 id="welcome-title">欢迎</h2>
 <p id="welcome-text" style="text-indent:2em">大家好！由北京邮电大学数学科学学院主办的“图论与组合”暑期课程将于2025年8月24日-8月29日在北京邮电大学（沙河校区）开课。本次课程聚焦于组合和极值图论前沿研究的相关工具和方法，面向研究生、博后和青年老师，旨在为老师和学生们提供学术交流平台。欢迎相关研究方向的老师及学生报名参加！</p>
 </section>
-   
    <section id="speakers">
 <h2 id="speaker-title">课程介绍</h2>
 <div id="speaker-list">
@@ -195,6 +396,49 @@
 </ul>
 </div>
 </section>
+    <div class="container">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="images/合影.png" alt="暑期课程合影">
+                    <div class="slide-content">
+                        <h2 class="slide-title">2025年“图论与组合”暑期课程</h2>
+                        <p class="slide-description">2025年8月24日-8月29日，北京邮电大学（沙河校区）</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/合影.png" alt="课程照片">
+                    <div class="slide-content">
+                        <h2 class="slide-title">课程照片</h2>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/合影.png" alt="课程照片">
+                    <div class="slide-content">
+                        <h2 class="slide-title">课程照片</h2>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/合影.png" alt="课程照片">
+                    <div class="slide-content">
+                        <h2 class="slide-title">课程照片</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+        </div>
+
+        <div class="slider-controls">
+            <button class="slider-btn prev">上一张</button>
+            <button class="slider-btn next">下一张</button>
+        </div>
+
 <section id="schedule">
   <table class="schedule-table">
     <thead>
@@ -326,7 +570,100 @@
 </span>
 </section>
 
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.querySelector('.slider');
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot');
+            const prevBtn = document.querySelector('.prev');
+            const nextBtn = document.querySelector('.next');
+            
+            let currentIndex = 0;
+            const slideCount = slides.length;
+            
+            // 更新幻灯片位置
+            function updateSlide() {
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+                
+                // 更新指示点状态
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+            
+            // 下一张幻灯片
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slideCount;
+                updateSlide();
+            }
+            
+            // 上一张幻灯片
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+                updateSlide();
+            }
+            
+            // 自动播放
+            let autoPlay = setInterval(nextSlide, 5000);
+            
+            // 鼠标悬停时暂停自动播放
+            slider.addEventListener('mouseenter', () => {
+                clearInterval(autoPlay);
+            });
+            
+            // 鼠标离开时恢复自动播放
+            slider.addEventListener('mouseleave', () => {
+                autoPlay = setInterval(nextSlide, 5000);
+            });
+            
+            // 添加按钮事件监听
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+            
+            // 添加指示点事件监听
+            dots.forEach(dot => {
+                dot.addEventListener('click', function() {
+                    currentIndex = parseInt(this.getAttribute('data-index'));
+                    updateSlide();
+                });
+            });
+            
+            // 添加键盘导航
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowLeft') {
+                    prevSlide();
+                } else if (e.key === 'ArrowRight') {
+                    nextSlide();
+                }
+            });
+            
+            // 添加触摸滑动支持
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            slider.addEventListener('touchstart', function(e) {
+                touchStartX = e.changedTouches[0].screenX;
+            });
+            
+            slider.addEventListener('touchend', function(e) {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            });
+            
+            function handleSwipe() {
+                const minSwipeDistance = 50;
+                const distance = touchStartX - touchEndX;
+                
+                if (Math.abs(distance) < minSwipeDistance) return;
+                
+                if (distance > 0) {
+                    nextSlide();
+                } else {
+                    prevSlide();
+                }
+            }
+        });
+    </script>
 
 </body>
 </html>
